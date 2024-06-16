@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>노원구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >공릉동 도깨비시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 노원구 동일로 180길 37 공릉상가(지하철 7호선 공릉역 2번 출구에서 360m,도보 5분)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 9:00~21:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-976-4143</li>
+                  <li style="padding-top: 10px; ">시장소개: 노원구에서 가장 규모가 큰 전통시장이다. 도깨비방망이처럼 무엇이든 만들어 내고 없는 것이 없는 시장이라는 뜻에서 도깨비시장이라 이름 붙여졌다.<br> 실제로 120여 개의 점포에서 다양한 먹거리와 식재료들을 판매하고 있다.<br> 입구에 시장 안내 지도가 상세하게 나와 있어 원하는 상점을 찾아가기가 쉽다. <br>김장철에는 김장시장이 개장된다. 배추나 무, 젓갈 등 김장에 필요한 재료들을 저렴한 가격에 구입할 수 있어 특히 인기 있다.<br>
+도깨비시장이라는 이름답게 경춘선 숲길과 연결되는 입구 앞에는 익살스러운 도깨비 벽화가 그려져 있다. <br>도깨비를 배경으로 이색적인 기념사진을 남겨 보는 것도 추천한다.
+            </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>손칼국수</li>
+                  <li style="padding-top: 10px; ">손만두</li>
+                   </ul>
+
+               <h2>추천 쇼핑</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>손두부</li>
+                  <li style="padding-top: 10px; ">그릇</li>
+                   </ul>    
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>경춘선숲길</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 6호선 화랑대역 2번출구에서 350m(도보 5분 소요)</li>
+                  <li style="padding-top: 10px; ">경춘선이 오가던 철로를 새로이 단장해 조성해 놓은 길이다. 도로 위로 실제 철길을 그대로 남겨 놓아 아날로그 감성을 느낄 수 있다. <br>철길 주변으로 개성 강한 카페와 레스토랑이 하나둘 들어서면서 공트럴파크(공릉동+센트럴파크)라 불리기도 한다.<br>
+서울에 남아 있는 보기 드문 간이역 화랑대역과 철도공원 주변은 주말마다 다양한 이벤트가 열린다. <br>철길을 따라 가볍게 산책하며 둘러보는 것을 추천한다.
+                    </li></ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

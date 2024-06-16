@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>강동구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >암사종합시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 강동구 상암로 11길 25(지하철 8호선 암사역 1번 출구)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 9:00~21:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-442-1040</li>
+                  <li style="padding-top: 10px; ">시장소개: 1970년대 후반부터 주거 지역에 자연스럽게 형성된 재래시장이다.<br> 먹거리, 생활 잡화, 수산물, 가공식품 등 약 105개의 점포에서 다양한 물건을 판매하고 있다.<br> 강동구 내 전통시장 중에서 처음으로 현대화 사업이 완공된 시장이다. <br>
+                    바닥은 편평한 화강암으로 바뀌었고 비가 와도 걱정 없도록 아케이드가 설치되었다.<br> 넓은 보행 통로 덕분에 방문객들이 많은 시간에도 쾌적한 분위기에서 시장을 구경할 수 있다.<br>
+암사종합시장은 주변 주민들에게 저렴한 가격에 질 좋은 상품을 판매하는 것으로 유명 하다.<br> 지하철 8호선 암사역에서 도보 3분 거리로 대중교통 이용이 편리하다.</li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>닭강정</li>
+                  <li style="padding-top: 10px; ">꼬마김밥</li>
+                   </ul>
+                   <h2>쇼핑아이템</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>강정</li>
+                  <li style="padding-top: 10px; "> 화장품</li>
+                   </ul>
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>강풀 만화거리</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 5호선 강동역 4번 출구(약 10분 소요)</li>
+                  <li style="padding-top: 10px; ">서울시 강동구 천호대로 168가길 38-3</li>
+                  <li style="padding-top: 10px; "> '순정만화, 바보' 등으로 유명한 웹툰 작가 강풀의 만화 속 명장면을 커다란 벽화로 만나 볼 수 있는 공간이다.<br>
+                     이 지역은 실제 작가가 거주하던 동네로 웹툰의 배경으로 자주 등장하기도 했다. 조용한 주택가였던 골목에 하나둘 벽화가 그려지기 시작했고 지금은 골목마다 50여 개의 벽화가 자리 잡고 있다. 
+                     <br>자연스레 이곳을 찾는 사람들도 많아졌다.<br>
+                     벽화와 함께 특별한 기념사진을 찍어 보는 것도 좋고 다양한 장르의 만화를 무료로 읽어 볼 수 있는 승룡이네 집에 방문해 보는 것도 추천한다.</li>
+              </ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>광진구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >화양제일시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 광진구 아차산로29길 59(지하철 2,7호선 건대입구역 1번 추구에서 450m, 도보 6분)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 9:00~22:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-465-3706</li>
+                  <li style="padding-top: 10px; ">시장 소개:대학교 인근엔 자연스럽게 먹자골목이 형성된다.<br> '건대 맛의 거리'를 지나 조금만 더 걷다 보면 어느새 화양제일시장에 들어서게 된다.<br> 규모는 그리 크지 않지만 주변 주민들은 물론 맛집 투어를 나온 젊은이들에게 트렌디 먹거리로 인기를 끌고 있는 전통시장이다.<br>
+주변에 나홀로 자취를 하는 1인 가구가 많다 보니 간편하게 끼니를 해결할 수 있는 반찬이나 떡, 분식을 판매하는 상점이 많다. 물론 가격도 저렴하다.<br> 덕분에 주머니 사정이 넉넉지 않은 학생들이 자주 찾는다. 신선한 과일이나 채소를 필요한 만큼 조금씩 구입할 수 있는 것도 장점이다.</li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>와플</li>
+                  <li style="padding-top: 10px; ">닭강정</li>
+                   </ul>
+                   <h2>쇼핑아이템</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>반찬</li>
+                  <li style="padding-top: 10px; "> 화분</li>
+                   </ul>
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>뚝섬한강공원</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 7호선 뚝섬유원지역 2번 출구(약 10분 소요)</li>
+                  <li style="padding-top: 10px; ">서울시 광진구 강변북로 139</li>
+                  <li style="padding-top: 10px; "><a href="https://hangang.seoul.go.kr/www/contents/654.do?mid=449">https://hangang.seoul.go.kr/www/contents/654.do?mid=449</a></li>
+                  <li style="padding-top: 10px; ">한강공원이 조성되기 전부터 강변유원지로 유명했던 곳이다. <br>아이들을 위한 어린이 놀이터와 인공 암벽장, 체육센터 등의 시설을 갖추고 있다.<br> 여름엔 야외 수영장이 오픈하기도 한다. 수변광장 뒤쪽 음악분수에서는 다양한 음악에 맞춰 화려한 분수쇼가 펼쳐진다(5~10월), 윈드서핑, 수상스키, 모터보트 등 수상 스포츠를 즐길 수도 있다. <br>
+                    뚝섬유원지역 3번 출구와 연결되어 있는 자벌레 모양의 서울생각마루안에는 전망대와 카페, 도서관 공간이 마련되어 있다.</li>
+              </ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

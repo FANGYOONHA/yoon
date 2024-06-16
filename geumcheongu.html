@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>금천구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >별빛남문시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 금천구 시흥대로 144실 17(지하철 2호선 구로디지털단지역 1번 출구에서5617번, 5627번 탑승 문성초등학교 하차)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 9:00~21:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-868-9727</li>
+                  <li style="padding-top: 10px; ">시장소개: 남문시장이라는 이름으로 1970년대부터 이어져 오다 2018년 별빛남문시장으로 이름을 변경하고 시장을 전체적으로 재정비했다.<br> 약 120여 개의 점포가 영업하고 있으며, 가격과 원산지를 정확하게 표시하는 가격표시제를 시행하고 있다.<br>
+입구에서부터 출구까지 일자형으로 길게 이어져 있어 쇼핑 동선도 편리하다. 수요일마다 특별 할인 행사가 열리며 봄에는 신바람 축제, 가을에는 동아리 축제 등 다양한 이벤트가 수시로 열리는 시장이다.<br> 화장실과 주차장 등 고객 편의 시설도 잘 갖추고 있다.
+            </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>벼리빵</li>
+                  <li style="padding-top: 10px; ">중국식 간식</li>
+                   </ul>
+
+               <h2>추천 쇼핑</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>잡곡</li>
+                  <li style="padding-top: 10px; ">견과류</li>
+                   </ul>    
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>감로천생태공원</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 1호선 독산역 1번 출구에서 금천 08번 버스 탑승 후 구민문화체육센터 하차(약 10분 소요)</li>
+                  <li style="padding-top: 10px; ">서울시 금천구 독산동 373(02-436-5800)</li>
+                  <li style="padding-top: 10px; "><a href="https://parks.seoul.go.kr/parks/detailView.do?pIdx=39">https://parks.seoul.go.kr/parks/detailView.do?pIdx=39</a></li>
+                  <li style="padding-top: 10px; ">여유롭게 산책을 즐기며 자연을 만끽할 수 있는 공원이다.<Br> 다양한 생물들이 자연 스럽게 서식할 수 있게 인공 습지로 조성되었다. <br>연못 주변엔 나무 데크가 설치되어 있다. <br>비교적 가까운 거리에서 연못의 수생 식물과 다양한 동식물들을 관찰할 수 있다. <Br>생태공원 내에는 숲 속 작은 도서관인 책달샘과 아이들을 위한 생태 탐방 시설, 놀이터가 있는 체험장도 있다.
+                    </li></ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

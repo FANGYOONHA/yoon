@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>송파구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >잠실 새마을 전통시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 송파구 석촌호수로12길 24(지하철 2호선 잠실새내역 3번 출구에서 280m,도보 4분)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 8:00~20:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-2203-4949</li>
+                  <li style="padding-top: 10px; ">시장소개: 50년 전통을 자랑하는 전통시장이지만 시설 현대화 사업으로 차 없는 거리 조성과 아케이드가 설치되어 보다 쾌적한 환경에서 시장을 즐길 수 있게 되었다.<br> 제철 채소와 과일 등 신선한 농수산물은 물론이고 TV에 다수 방영될 정도로 유명한 먹거리들도 많다.<br>
+특히 젊은 층이 많이 찾는 전통시장으로 유행에 발맞춘 트렌디한 음식들을 맛볼 수 있다는 것도 장점이다.<br> 잠실 야구장 옆에 자리하고 있는 덕분에 야구 경기 시간이 다가오면 시장은 더욱 활기가 넘친다.<br> 족발, 치킨, 만두, 떡볶이, 육회 등 야구장에서 먹으면 좋은 다양한 먹거리를 판매한다. <br>잠실새내역에서 도보 4분 거리로 대중교통 이용도 편리하다.
+            </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>만두</li>
+                  <li style="padding-top: 10px; ">오징어 튀김</li>
+                   </ul>
+
+               <h2>추천 쇼핑</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>견과류</li>
+                  <li style="padding-top: 10px; ">애견용품</li>
+                   </ul>    
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>서울스카이(제2 롯데월드)</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 2호선 잠실역 1, 2번 출구</li>
+                  <li style="padding-top: 10px; ">서울시 송파구 올림픽로 300(02-1661-2000)</li>
+                  <li style="padding-top: 10px; "><a href="https://seoulsky.lotteworld.com/ko/main/index.do">https://seoulsky.lotteworld.com/ko/main/index.do</a></li>
+                  <li style="padding-top: 10px; ">대한민국에서 가장 높은 곳에 자리 잡은 전망대로 500m 상공 위에서 서울을 한눈에 내려다볼 수 있다.<br> 지하 1층에서 118층까지 단 1분 만에 이동하는 스카이 셔틀의 기술은 기네스북에 등재되어 있기도 하다. <br>118층 메인 전망대 스카이 데크 역시 가장 높은 유리 바닥 전망대로 기네스북에 이름을 올렸다.<br> 메인 전망대는 물론이고 하늘비밀정원, 스카이맵핑쇼 등 다양한 볼거리를 제공한다.
+
+                    </li></ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

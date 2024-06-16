@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>은평구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >연서시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 은평구 통일로 850(지하철 3, 6호선 연신내역 2번 출구)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 8:00~22:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-355-1272</li>
+                  <li style="padding-top: 10px; ">시장소개: 서울 서북부 최대 규모의 전통시장이다. 농 •수 •축산물뿐만 아니라 의류나 잡화를 파는 상점들도 많다.<br> 연신내 로데오거리까지 이어진 상권으로 대로변은 물론이고 골목 구석구석까지 다양한 물건들로 가득하다. <br>지하철 3, 4호선이 만나는 연신내역과 인접해 있어 유동 인구가 많다. 덕분에 아침부터 저녁까지 활기가 넘치는 시장이다.<br>
+북한산 등산객들이 거쳐 가는 길목에 있어 주말이면 등산객들로 가득 찬다. 등산 전 든든하게 배를 채울 먹거리를 구입하기도 하고 등산 가방 안에 김밥을 채워 북한산을 오르기도 한다. <br>먹자골목은 등산객들의 뒤풀이 장소로도 인기 있다.
+            </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>김밥</li>
+                  <li style="padding-top: 10px; ">잔치국수</li>
+                   </ul>
+
+               <h2>추천 쇼핑</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>떡갈비</li>
+                  <li style="padding-top: 10px; ">신발</li>
+                   </ul>    
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>은평한옥마을</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 연서시장 701번 버스 탑승 후 하나고, 삼천사, 진관사입구 하차(약 20분 소요)</li>
+                  <li style="padding-top: 10px; ">서울시 은평구 연서로 50길 7-12</li>
+                  <li style="padding-top: 10px; "><a href="https://cf13.wazzang.com/">https://cf13.wazzang.com/</a></li>
+                  <li style="padding-top: 10px; ">서촌과 북촌에 이어 서울의 세 번째 한옥마을이다.<br>
+한옥 고유의 정체성은 잃지 않으면서 현대의 생활 양식에 맞추어 조성되었다. <br>대부분의 한옥은 실제 주민이 거주하는 개인 사유지이지만 금암미술관, 셋이서문학관 등 직접 한옥을 체험해 볼 수 있는 공간도 있다. <br>은평역사한옥박물관에는 한옥의 변천 과정과 특징, 재료와 건축 과정 등이 자세히 전시되어 있다. <br>숙용심씨 기념비, 진관사, 한옥마을 느티나무 등 은평한옥마을 8경을 함께 둘러보는 것도 추천한다.
+
+                    </li></ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

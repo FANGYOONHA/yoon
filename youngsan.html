@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>용산구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >용문전통시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 용산구 효창원로42길 38-14(지하철 6호선 효창공원앞역 3번 출구에서, 도보 3분)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 9:00~20:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-3275-0883</li>
+                  <li style="padding-top: 10px; ">시장 소개: 1965년부터 형성되기 시작한 용문시장은 용산구에서 가장 규모가 크고 활성화된 시장이다.<br>
+50년이 훌쩍 넘는 시간이 흐른 만큼 시장 곳곳에는 세월의 흔적이 고스란히 남아 있다.<br> 점점 현대화되고 있는 다른 시장들과 다르게 다소 불편한 점이 있을 수도 있지만 옛 시골 장터 같은 푸근함이 남아 있는 시장이기도 하다.<br>
+신선한 야채와 과일은 물론이고 생선과 식재료들을 판매하고 있다.<br> 또한 합리적인 가격으로 다양한 디자인의 옷과 액세서리 등을 구입할 수 있는 가게들도 많다. <br>
+매년 어린이날에는 아이들을 위한 특별한 축제가 열리며 중앙 광장에서는 다양한 공연도 펼쳐진다.</li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>해장국</li>
+                  <li style="padding-top: 10px; ">족발</li>
+              </ul>
+              <h2>추천 쇼핑</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>빵</li>
+                  <li style="padding-top: 10px; ">그릇</li>
+              </ul>
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>국립중앙박물관</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 원효로2가 400번 버스 탑승 후 국립중앙박물관용산공원 하차(약 10분 소요)</li>
+                  <li style="padding-top: 10px; "><a href="www.museum.go.kr"> www.museum.go.kr</a> </li>
+                  <li style="padding-top: 10px; ">서울시 용산구 서빙고로 137 (전화: 02-2077-9000) </li>
+                  <li style="padding-top: 10px; ">총 6개의 관과 50개의 실로 구성되어 12,044점의 유물을 전시하고 있는 세계적인 규모의 박물관이다.<br>
+                     상설전시관과 기획전시실, 어린이 박물관이 있다. 한국의 전통 조경을 테마로 한 야외 정원에는 석조 문화재가 있는 석탑정원과 미르폭포, 거울못과 정자 등이 조성되어 있다.<br>
+                     서울도보해설관광 프로그램을 예약하면 관광 해설사의 전문적인 해설을 들으며 야외 정원을 탐방할 수 있다.</li>
+              </ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

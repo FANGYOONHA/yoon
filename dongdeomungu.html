@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>동대문구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >서울약령시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 동대문구 약령중앙로 10(지하철 1호선제기동역 2번 출구)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 9:00~18:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-969-4793</li>
+                  <li style="padding-top: 10px; ">시장소개: 전국에서 취급되는 한약재의 70%를 담당하고 있는 국내 최대 규모의 한약재 유통 시장이다.<br> 조선시대 여행자들을 위해 무료 숙박을 제공해 주고 아픈 사람들을 치료해 주던 보제원(0)이 있던 자리에 한의약 관련 상점들이 모여들면서 지금의 모습으로 발전하였다.<br> 8만여 평 규모에 천여 개가 넘는 한의약 관련 전문 업소가 모여 있다.<br>
+1995년 서울시로부터 서울약령시로 승인 받았으며 2005년에는 한방산업특구로 지정되어 관광 명소로 성장하게 되었다.<br> 전 세계적으로 한의학에 대한 관심이 높아지기 시작하면서 외국인 관광객들도 많이 늘어났으며, 매년 한방문화축제가 열린다.</li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천한약재</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>황기</li>
+                  <li style="padding-top: 10px; ">갈근</li>
+                  <li style="padding-top: 10px; ">대추</li>
+                  <li style="padding-top: 10px; ">감초</li>
+                   </ul>
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>홍릉숲</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 6호선 고려대역 3번 출구에서(도보 7분 소요)</li>
+                  <li style="padding-top: 10px; ">서울시 동대문구 회기로 57(02-961-2777)</li>
+                  <li style="padding-top: 10px; ">화요일~ 금요일 사전 예약 필수, 월요일 및 공휴일 휴무</li>
+                  <li style="padding-top: 10px; ">우리나라 최초의 수목원으로 국내외 다양한 식물 유전 자원을 체계적으로 수집하여 조성한 시험 연구림이다.<br>
+침엽수원, 조경수원, 관목원 등 총 11개의 주제로 구역이 나누어져 있으며 총 2,035종의 식물 유전 자원을 관리하고 있다.<br> 홍릉숲은 과거 명성 황후의 능인 '홍릉'이 있었던 곳이다. <br>홍릉은 경기도 남양주시로 이장되어 지금은 홍릉이 있었던 터만 표시되어 있다. 평일에는 예약제로 숲 해설 프로그램에 참여할 수 있다.</li>
+              </ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

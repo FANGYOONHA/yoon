@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>서초구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >양재꽃시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 서초구 강남대로 27(신분당선 양재시민의숲역 4번 출구에서 450m,도보 6분)</li>
+                  <li style="padding-top: 10px; ">생화도매(00:00~13:00),일요일 휴무 / 분화온실,화환점포 7:00~19:00</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-579-8100</li>
+                  <li style="padding-top: 10px; ">시장소개: 전국 최대 규모의 화훼 도매 시장이다. 분화온실, 화환점포, 생화 꽃 도매 시장 등으로 구성되어 있다. <br>대부분의 상점들은 도매용 대량 판매를 목적으로 하지만 일반 소비자들도 소매 가격으로 꽃과 화분을 구입할 수 있다.<br>
+분화온실에서는 동양란, 서양란, 선인장, 허브 등을 판매한다. <br>화환점포에는 꽃다발과 화환, 꽃바구니 등이 있다.<br> 포장되지 않은 생화와 부자재 등은 생화 꽃 도매 시장에서 구입할 수 있다.<br> 꽃 구입 시 영수증을 요청하면 꽃 이름과 가격을 손쉽게 확인할 수 있다.
+            </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 꽃</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>튤립</li>
+                  <li style="padding-top: 10px; ">장미</li>
+                  <li style="padding-top: 10px; ">국화</li>
+                  <li style="padding-top: 10px; ">프리지어</li>
+                   </ul>
+
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>양재시민의 숲</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 신분당선 양재시민의숲역 1번 출구</li>
+                  <li style="padding-top: 10px; ">서울시 서초구 매헌로 99(02-575-3895)</li>
+                  <li style="padding-top: 10px; "><a href="https://parks.seoul.go.kr/template/sub/citizen.do">https://parks.seoul.go.kr/template/sub/citizen.do</a></li>
+                  <li style="padding-top: 10px; ">1986년 개장한 도심 속 휴식 공간이다. 매헌로를 기준으로 산책로와 잔디공원이 펼쳐진 북측 구역과 위령탑이 있는 남측 구역으로 나눠져 있다.<br> 어린이 놀이터와 다양한 운동 시설이 있어 늘 많은 주민들이 찾는다.
+
+                    </li></ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

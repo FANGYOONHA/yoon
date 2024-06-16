@@ -3,14 +3,241 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>market</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="market-style.css">  
 
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+  <body data-bs-spy="scroll" data-bs-target="#nav-menu">
+    
+
+
+ <!-- 네비게이션 영역 시작 -->
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-beige">
+      
+    <div class="container">
+
+        <a class="gugi-font navbar-brand" href="#home">
+           <h3>market</h3>
+            </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+            aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-menu">
+            <ul class="navbar-nav ms-auto my-2">
+                <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
+                <li class="nav-item"><a class="nav-link" href="#data">자료 광장</a></li>
+                <li class="nav-item"><a class="nav-link" href="#join">참여 광장</a></li>
+                <select class="nav-item"> 
+                        <option value="" selected="">KOREAN</option>
+                        <option value="">ENGLISH</option></li>
+                    </select>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- 네비게이션 영역 끝 -->
+
+
+    <!-- 헤더 영역 시작 -->
+    <header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white">
+
+        <h1 class="display-3 fw-bold mb-5" style="font-size: 7em;">서울 재래시장</h1>
+        
+        <h5 class="text-center py-5">시장은 우리 삶과 밀접하게 관련되어 지역 곳곳에 자리하고 있습니다.<br> 
+            더불어 요즘에는 볼거리와 먹거리가 풍부해 시장을 찾는 사람들이 늘고 있습니다.<br> 
+            그러나 서울 전통시장들의 정보를 한데 모아서 제공하는 웹사이트는 찾기 어려워 <br>
+            이에 필요에 위해 혹은 즐거움을 위해 시장을 찾는 이들에게 유용한 정보를 
+            제공하고자, 이 홈페이지를 제작했습니다.</h5>
+        
+    </header>
+    <!-- 헤더 영역 끝 -->
 
     
+<!--지도 모양-->
+    <div id="data">
+		
+            <div class="text-center py-5"><h1 >지도로 보는 시장</h1></div>
+			<div class="autonomyDivision">
+				<div class="map">
+					<img src="image/seoul.png" alt="서울 구별 영역분리 지도">
+					<a href="eunpyeonggu.html" target="_blank" title="은평구" class="area area1">은평구</a>
+					<a href="seodae.html" target="_blank" title="서대문구" class="area area2">서대문구</a>
+					<a href="mapo.html" target="_blank" title="마포구" class="area area3">마포구</a>
+					<a href="dobonggu.html" target="_blank" title="도봉구" class="area area4">도봉구</a>
+					<a href="junggu.html" target="_blank" title="중구" class="area area5">중구</a>
+					<a href="youngsan.html" target="_blank" title="용산구" class="area area6">용산구</a>
+					<a href="jongru.html" target="_blank" title="종로구" class="area area7">종로구</a>
+					<a href="gangbukgu.html" target="_blank" title="강북구" class="area area8">강북구</a>
+					<a href="seongbukgu.html" target="_blank" title="성북구" class="area area9">성북구</a>
+					<a href="dongdeomungu.html" target="_blank" title="동대문구" class="area area10">동대문구</a>
+					<a href="seongdonggu.html" target="_blank" title="성동구" class="area area11">성동구</a>
+					<a href="nowongu.html" target="_blank" title="노원구" class="area area12">노원구</a>
+					<a href="jungranggu.html" target="_blank" title="중랑구" class="area area13">중랑구</a>
+					<a href="gwanggingu.html" target="_blank" title="광진구" class="area area14">광진구</a>
+					<a href="gangseogu.html" target="_blank" title="강서구" class="area area15">강서구</a>
+					<a href="yangcheongu.html" target="_blank" title="양천구" class="area area16">양천구</a>
+					<a href="gorogu.html" target="_blank" title="구로구" class="area area17">구로구</a>
+					<a href="yeongdeungpogu.html" target="_blank" title="영등포구" class="area area18">영등포구</a>
+					<a href="geumcheongu.html" target="_blank" title="금천구" class="area area19">금천구</a>
+					<a href="dongjakgu.html" target="_blank" title="동작구" class="area area20">동작구</a>
+					<a href="gwanakgu.html" target="_blank" title="관악구" class="area area21">관악구</a>
+					<a href="seochogu.html" target="_blank" title="서초구" class="area area22">서초구</a>
+					<a href="gangnamgu.html" target="_blank" title="강남구" class="area area23">강남구</a>
+					<a href="songpagu.html" target="_blank" title="송파구" class="area area24">송파구</a>
+					<a href="gangdonggu.html" target="_blank" title="강동구" class="area area25">강동구</a>
+				</div>
+			</div>
+<!--지도 모양 끝-->
+
+
+
+<!--즐기는법1 시작-->
+<div id="join">
+<section class="container overflow-hidden py-5" >
+
+    <div class="text-center py-5">
+        <h1>즐기는 법</h1>
+        <p class="lead text-muted">시장에 갔다면 꼭 먹어야 하는 음식</p>
+    </div>
+
+    <div class="row pb-5 gy-4">
+        <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="image/chicken.jpg" alt="닭강정" class="card-img-top">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-4">닭강정</h3>
+                    <p class="card-text">닭고기의 살을 한 입 크기로 튀겨 내 다양한 소스와 함께 버무려 먹는 음식이다. 
+                        갓 튀겨 낸 닭강정은 바삭한 맛이 일품이다. 
+                    <br>매콤한 맛, 달콤한 맛 등의 소스를 골라 즐길 수 있다. </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="image/gimbap.jpg" alt="김밥" class="card-img-top">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-4">김밥</h3>
+                    <p class="card-text">김에 밥을 놓고 여러가지 재료를 넣어 말아 만든 음식이다.
+                        참치, 치즈 등 속 재료에 따라 다양한 맛을 느낄 수 있다. 미니 사이즈 꼬마 김밥도 추천한다.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="image/tteokbokki.jpg" alt="떡볶이" class="card-img-top">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-4">떡볶이</h3>
+                    <p class="card-text">쫄깃한 떡에 냅고 달콤한 소스를 넣어 만드는 분식이다. 
+                        쫄깃한 맛을 좋아한다면 쌀떡, 부드러운 맛이 좋다면 밀떡을 추천한다. 
+                        기름으로 튀기듯 볶아 만든 기름 떡볶이도 별미이다. </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="image/donut.png" alt="꽈배기" class="card-img-top">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-4">꽈배기</h3>
+                    <p class="card-text">찹쌀을 섞은 밀가루 반죽을 꼬아서 튀겨 낸 한국식 도넛이다.<br>
+                        갓 튀겨 낸 꽈배기는 설탕을 듬뿍 뿌려 먹는 것을 추천한다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</div>
+
+<!-- 즐기는법1 끝 -->
+
+
+<!--즐기는법2 시작-->
+<div id="join">
+    <section class="container overflow-hidden py-5" >
+    
+        <div class="text-center py-5">
+            <h1>즐기는 법</h1>
+            <p class="lead text-muted">시장에 갔다면 꼭 사야하는 물건</p>
+        </div>
+    
+        <div class="row pb-5 gy-4">
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="image/gim.png" alt="김" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">김</h3>
+                        <p class="card-text">김은 일반 해조류에 비해 단백질 함량이 매우 높은 고단백 식품이다. 기름을 바르고 소금치고 구워낸 김은 특유의 감칠맛으로 외국인들의 쇼핑 스테디셀러이다. </p>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="image/pant.png" alt="일바지" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">일바지</h3>
+                        <p class="card-text">한국에서는 일명 몸빼바지라 불리는데, 최근에 편안함과 멋스러움으로 사랑받고 있는 아이템이다.
+                            모든 계절에 입을 수 있도록 소재가 다양하게 나온다.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="image/tt.png" alt="전통공예품" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">전통공예품</h3>
+                        <p class="card-text">한국 전통 문양이나 색동 무늬를 넣은 가방, 자수가 놓인 동전 지갑,열쇠고리 등 가격대별로 다양한 상품을 구입할 수 있다.
+                            특히 외국인들에게 선물용으로 인기 있다. </p>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="image/ss.png" alt="양말" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-4">양말</h3>
+                        <p class="card-text">디자인이 다양하고 저렴하여 인기가 많은 양말은 부피를 많이 차지하지 않아 캐리어에 많이 가져갈 수 있다.<br> 
+                            만화 캐릭터부터 아이돌 멤버의 얼굴이 새겨진 양말까지 다양한 디자인이 있기때문에 고르는 재미도 쏠쏠하다. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    </div>
+    
+    <!-- 즐기는법2 끝 -->
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
+

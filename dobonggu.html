@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>도봉구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >방학동 도깨비시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 도봉구 도당로 13가길 17(지하철 1호선 방학역 1번 출구에서 1.1km,도보 15분)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 8:00~21:30 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-954-1225</li>
+                  <li style="padding-top: 10px; ">시장소개: 1982년 노점 상인들이 모여들면서 형성된 시장이다. 지금 도깨비시장이 있는 자리엔 과거 효심이 지극한 아들과 노모가 살고 있었다고 한다.<br> 아들의 효심에 감동한 도깨비 덕분에 병든 노모가 건강을 회복했다고 전해지면서 도깨비시장이라 불리기 시작했다. <br>시장에는 간판마다 도깨비 모형이 걸려 있으며 도깨비 포토존도 마련되어 있다.<br>
+반짝 이벤트와 정기적인 세일 행사가 꾸준히 진행된다. 또한 도봉구 역사문화 관광벨트와 연계한 이벤트를 통해 방문객들에게 여러 가지 상품을 제공하고 있다. <br>버려진 폐목재로 물건을 만드는 공간인 도깨비방도 운영하고 있다.
+            </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>호떡</li>
+                  <li style="padding-top: 10px; ">김밥</li>
+                   </ul>
+
+               <h2>추천 쇼핑</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>김</li>
+                  <li style="padding-top: 10px; ">채소</li>
+                   </ul>    
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>평화문화진지</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 1, 7호선 도봉산역 1-1번 출구</li>
+                  <li style="padding-top: 10px; ">서울시 도봉구 마들로 932(02-3494-1970)</li>
+                  <li style="padding-top: 10px; ">화요일-일요일 10:00~ 18:00 월요일 휴관</li>
+                  <li style="padding-top: 10px; ">오랫동안 흉물로 방치되고 있던 대전차 방호 시설을 문화 창작 공간으로 재탄생시킨 곳이다. <br>공연장과 전시실, 스튜디오 등으로 이루어져 있으며 다양한 분야의 작가들을 선정해 문화 예술 사업을 진행하고 있다. <br>또한 작가와 시민들이 함께하는 연계 프로그램으로 예술 워크숍과 문화 버스킹 등의 이벤트도 수시로 진행하고 있다.
+                    </li></ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>강남구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >영동전통시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 강남구 학동로 4길 35(지하철 7호선 논현역 2번출구에서 350m,도보 5분)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 9:00~20:00 상점별 오픈 시간 상이</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-512-9111</li>
+                  <li style="padding-top: 10px; ">시장소개: 높은 빌딩과 복잡한 거리가 얽혀 있는 강남 한복판에 자리 잡고 있는 강남구 유일의 골목 형 전통시장이다. <br>1975년부터 형성되기 시작했으며 신선한 농•수• 축산물은 물론이고 의류, 가공식품 등 다양한 물품을 판매하고 있다. <br>특히 20~30대 젊은 층들이 주로 찾는 전통시장으로 1인 가구를 위한 반찬과 식재료를 구입하기 편리하다.<br>
+영동전통시장은 오랜 역사만큼 한 곳에서 꾸준히 손님을 맞이하고 있는 상점들이 많다.<br>
+덕분에 인근 직장인들에게 시장 특유의 정을 느낄 수 있는 장소로 인기를 끌고 있다.<br>
+점심시간은 물론이고 퇴근 후에 삼삼오오 모여 편안한 한 끼를 즐기는 사람들이 많다.
+            </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>추천 먹거리</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>순댓국</li>
+                  <li style="padding-top: 10px; ">옛날 통닭</li>
+                   </ul>
+
+               <h2>추천 쇼핑</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>축산물</li>
+                  <li style="padding-top: 10px; ">의류</li>
+                   </ul>    
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>서울 선릉과 정릉</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 지하철 9호선 선정릉역 3번 출구에서 1km(도보 15분 소요)</li>
+                  <li style="padding-top: 10px; ">서울시 강남구 선릉로 100길(02-568-1291)</li>
+                  <li style="padding-top: 10px; ">내국인 만 25세~64세 1,000원 외국인 만 19세~64세 1,000원</li>
+                  <li style="padding-top: 10px; ">선릉은 조선 9대 왕 성종과 세 번째 왕비 정현왕후 윤씨의 능이고 정릉은 조선 11대 왕 중종의 능이다.<br> 1494년 성종이 세상을 떠나자 지금의 자리에 조성되었다.<br> 왕과 왕비의 봉분이 있는 능침공간, 제사를 지내는 공간인 제향공간, 제례 준비를 위한 진입공간까지 비교적 잘 보존되어
+있다. <br>거대한 도심 속 빌딩 숲과 잘 어우러져 있는 선릉과 정릉은 유네스코 세계 문화유산으로 등재되어 있다.
+
+                    </li></ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

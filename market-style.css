@@ -1,0 +1,72 @@
+
+
+
+
+
+body, 
+h1,
+.song-myung-regular {
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* 네비게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: #f38b2a !important;
+}
+.navbar-beige {
+    background-color:#f8e9ad;
+  }
+  
+
+  /* 헤더 영역 */
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(image/background.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+/* 지도 영역 */
+.autonomyDivision{padding:50px 0;margin:0 auto;background:url(image/wave.jpg) no-repeat center center;}
+.autonomyDivision .map{position:relative;width:600px;margin:0 auto;}
+.autonomyDivision .map img{display:block;width:100%;}
+.autonomyDivision .map a.area{display:block;padding:5px;position:absolute;font-size:13px;}
+.autonomyDivision .map a.area.area1{top:28%;left:34%;}/*은평구*/
+.autonomyDivision .map a.area.area2{top:44%;left:36%;}/*서대문구*/
+.autonomyDivision .map a.area.area3{top:50%;left:30%;}/*마포구*/
+.autonomyDivision .map a.area.area4{top:10%;left:60%;}/*도봉구*/
+.autonomyDivision .map a.area.area5{top:50%;left:51%;}/*중구*/
+.autonomyDivision .map a.area.area6{top:59%;left:48%;}/*용산구*/
+.autonomyDivision .map a.area.area7{top:40%;left:47%;}/*종로구*/
+.autonomyDivision .map a.area.area8{top:21%;left:54%;}/*강북구*/
+.autonomyDivision .map a.area.area9{top:35%;left:56%;}/*성북구*/
+.autonomyDivision .map a.area.area10{top:42%;left:64%;}/*동대문구*/
+.autonomyDivision .map a.area.area11{top:52%;left:63%;}/*성동구*/
+.autonomyDivision .map a.area.area12{top:15%;left:70%;}/*노원구*/
+.autonomyDivision .map a.area.area13{top:36%;left:75%;}/*중랑구*/
+.autonomyDivision .map a.area.area14{top:54%;left:73%;}/*광진구*/
+
+.autonomyDivision .map a.area.area15{top:48%;left:8%;}/*강서구*/
+.autonomyDivision .map a.area.area16{top:64%;left:16%;}/*양천구*/
+.autonomyDivision .map a.area.area17{top:73%;left:16%;}/*구로구*/
+.autonomyDivision .map a.area.area18{top:64%;left:29%;}/*영등포구*/
+.autonomyDivision .map a.area.area19{top:87%;left:29%;}/*금천구*/
+.autonomyDivision .map a.area.area20{top:70%;left:40%;}/*동작구*/
+.autonomyDivision .map a.area.area21{top:83%;left:39%;}/*관악구*/
+.autonomyDivision .map a.area.area22{top:76%;left:54%;}/*서초구*/
+.autonomyDivision .map a.area.area23{top:73%;left:66%;}/*강남구*/
+.autonomyDivision .map a.area.area24{top:69%;left:79%;}/*송파구*/
+.autonomyDivision .map a.area.area25{top:54%;left:86%;}/*강동구*/
+
+

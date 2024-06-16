@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>종로구</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="gu.css">  
+
+    <!--폰트 설정-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <section class="main_visual type2" style="background-image:url(image/bg.png)">
+    <div class="inner  ">
+      <h1 class="text-center" style="font-size: 6em;" >통인시장</h1>
+    </div>
+  </section>
+
+
+
+    <ul style="list-style-type: none; text-align: center; padding-top: 50px;" >
+        <li style="display: inline-block;  margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('home')">시장 정보</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('about')">추천</a>
+        </li>
+        <li style="display: inline-block; margin: 0 20px;">
+            <a href="#" style="text-decoration: none; font-size: 2em; color: #333;" onclick="loadContent('contact')">주변 관광지</a>
+        </li>
+    </ul>
+</div>
+<div class="content" id="content" style="text-align: center;">
+    <h5>원하는 서비스를 눌러주세요!</h5>
+</div>
+
+
+<script>
+  function loadContent(page) {
+      var contentElement = document.getElementById('content');
+      if (page === 'home') {
+          contentElement.innerHTML = `
+              
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>주소: 서울시 종로구 자하문로 15길 18(지하철 3호선 경복궁역 2번 출구로 나와 500m직진)</li>
+                  <li style="padding-top: 10px; ">상점 오픈시간: 7:00~21:00 매월 셋째 주 일요일 휴무</li>
+                  <li style="padding-top: 10px; ">전화번호: 02-722-0911</li>
+                  <li style="padding-top: 10px; ">시장 소개: 1941년 공설시장으로 출발해 지금은 80여 개의 점포가 자리 잡고 있는 시장이 되었다.<br>
+                    식당, 반찬 가게 등 먹거리를 판매하는 상점들이 가장 많고 채소, 과일, 생선, 정육 등을 판매하는 상점들이 그 뒤를 잇는다.<br>
+TV 방송을 통해 통인시장의 명물 도시락카페가 소개되면서 시장을 찾는 방문객들이 크게 늘어났다.<br> 통인시장에서만 통용되는 화폐인 엽전을 구입해 도시락카페의 엽전 도시락을 즐길 수 있다. 
+<br>여러 가지 음식을 다양하게 맛보고 싶어 하는 관광객들에게 딱 맞는 먹거리 체험이다. 덕분에 해외 여행자들에게도 인기가 많다.
+                    </li>
+              </ul>
+          `; 
+      } else if (page === 'about') {
+          contentElement.innerHTML = `
+              <h2>통인시장의 명물</h2>
+              <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>고객만족센터 2층 도시락카페에서 엽전을 구입한다. 엽전은 기본 10개 이상 구입 가능하며 엽전 1개의 가격은 500원이다.</li>
+                  <li style="padding-top: 10px; ">엽전과 함께 제공하는 빈 도시락을 들고 통인시장 내 도시락카페 가맹점에서 먹거리를 구입한다. 떡볶이, 반찬 등 대부분의 먹거리는 엽전 2~3개로 구입할 수 있다.</li>
+                  <li style="padding-top: 10px; ">채워진 도시락을 들고 도시락카페로 돌아와 밥과 국을 구입한다. 밥과 국은 각각 1,000원씩에 판매하고 있으며 엽전이 부족하다면 현금 구입도 가능하다.</li>
+                  <li style="padding-top: 10px; ">수저와 식수 등은 도시락카페에서 제공된다. 자리에 앉아 맛있게 먹는다. 도시락카페를 이용하면 고객센터 내 카페에서 음료 구입 시 500원을 할인 받을 수 있다.</li>
+              </ul>
+          `;
+      } else if (page === 'contact') {
+          contentElement.innerHTML = `
+              <h2>익선동 한옥거리</h2>
+              
+                            <ul style="list-style-type: disc;  list-style-position: inside; text-align: left; padding-right: 200px; display: inline-block; padding-top: 50px; font-size: 1.15em;">
+                  <li>가는 길: 원효로2가 통인시장종로구보건소 7212번 버스 탑승 후 종로 3가.탑골공원 하차(약 10분 소요, 도보10분)</li>
+                  <li style="padding-top: 10px; ">서울시 종로구 수표로 28길 일대 </li>
+                  <li style="padding-top: 10px; "> 1920년대 지어진 한옥이 늘어선 거리이다.<br>
+                     한옥을 개조한 개성 강한 카페와 상점, 갤러리들이 새롭게 오픈하여 카페거리가 조성되었다.<br>
+                     정겨운 한옥과 트랜디한 카페, 레스트랑들을 한곳에서 만날 수 있다.</li>
+              </ul>
+          `;
+      }
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
